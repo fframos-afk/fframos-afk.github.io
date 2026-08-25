@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Distribuição &amp; Detalhamento AGE/PA</title>
+<meta name="description" content="Política de privacidade da extensão Distribuição & Detalhamento — AGE/PA. A extensão não coleta, não transmite e não compartilha dados.">
+<style>
+  :root{
+    --ink:#14233b; --ink-2:#0c1626; --gold:#b08a3e; --gold-soft:#ecdcbb;
+    --paper:#fbfaf7; --card:#ffffff; --line:#e4e0d6; --text:#1b2433; --muted:#5f6a80;
+    --serif:'Iowan Old Style','Palatino Linotype',Georgia,'Times New Roman',serif;
+    --sans:'Inter','Segoe UI',system-ui,-apple-system,Arial,sans-serif;
+    --mono:'SFMono-Regular','Consolas','Courier New',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--text);font-family:var(--sans);
+       font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+  /* ---------- cabeçalho ---------- */
+  header{position:relative;color:#fff;padding:56px 0 52px;
+    background:radial-gradient(120% 140% at 8% 0%,rgba(176,138,62,.20),transparent 55%),
+               linear-gradient(160deg,#1a2c48,#14233b 45%,#0a1220)}
+  header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--gold) 15%,var(--gold-soft) 50%,var(--gold) 85%,transparent)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px}
+  .brand{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+  .brand svg{flex-shrink:0;filter:drop-shadow(0 2px 5px rgba(0,0,0,.4))}
+  .brand .nome{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.3px;line-height:1.15}
+  .brand .org{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);margin-top:3px}
+  h1{font-family:var(--serif);font-size:clamp(30px,5vw,42px);font-weight:600;line-height:1.1;letter-spacing:.3px}
+  .selo{display:inline-block;margin-top:18px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold-soft);border:1px solid rgba(205,171,99,.5);border-radius:999px;padding:6px 14px}
+
+  /* ---------- declaração (elemento-assinatura) ---------- */
+  .declaracao{max-width:760px;margin:-30px auto 0;padding:0 28px;position:relative;z-index:2}
+  .declaracao .caixa{background:var(--card);border:1px solid var(--line);
+    border-left:4px solid var(--gold);border-radius:12px;padding:26px 30px;
+    box-shadow:0 14px 40px rgba(20,35,59,.10)}
+  .declaracao p{font-family:var(--serif);font-size:clamp(19px,2.6vw,23px);line-height:1.4;color:var(--ink)}
+  .declaracao small{display:block;margin-top:12px;font-family:var(--sans);
+    font-size:13.5px;color:var(--muted);line-height:1.6}
+
+  main{max-width:760px;margin:0 auto;padding:48px 28px 40px}
+  section{margin-bottom:40px}
+  h2{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink);
+     margin-bottom:14px;display:flex;align-items:baseline;gap:11px}
+  h2 .n{font-family:var(--mono);font-size:12px;color:var(--gold);letter-spacing:.05em}
+  p + p{margin-top:12px}
+  ul{list-style:none;margin-top:12px}
+  li{position:relative;padding-left:20px;margin-bottom:9px}
+  li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
+    border:1.5px solid var(--gold);border-radius:50%}
+  li strong{color:var(--ink)}
+  code{font-family:var(--mono);font-size:.88em;background:#f0eee7;
+       border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--ink)}
+
+  /* tabela de permissões */
+  table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+     border-bottom:1.5px solid var(--ink)}
+  td:first-child{font-family:var(--mono);font-size:13px;color:var(--ink);white-space:nowrap;width:1%}
+
+  .nota{background:#fffdf8;border:1px solid var(--gold-soft);border-radius:10px;padding:16px 20px;font-size:14.5px}
+
+  footer{border-top:1px solid var(--line);background:#f4f2ec}
+  .rodape{max-width:760px;margin:0 auto;padding:30px 28px 44px;
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    font-size:13px;color:var(--muted)}
+  .rodape .sig{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--gold)}
+
+  @media (max-width:560px){
+    header{padding:40px 0 44px}
+    .declaracao .caixa{padding:22px}
+    code{word-break:break-word}
+    table,thead,tbody,tr,th,td{display:block;width:auto}
+    thead{display:none}
+    tr{border-bottom:1px solid var(--line);padding:12px 0}
+    tr:last-child{border-bottom:none}
+    td{border:none;padding:0}
+    td:first-child{width:auto;white-space:normal;color:var(--gold);
+      font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+  }
+  @media print{
+    body{background:#fff}
+    header{background:#14233b !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .declaracao .caixa{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="38" height="43" viewBox="0 0 34 38" aria-hidden="true">
+        <defs><linearGradient id="c" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#224973"/><stop offset="1" stop-color="#0c1626"/></linearGradient></defs>
+        <path d="M17 1.6 31.4 6.1V19.4C31.4 28 25 33.7 17 36.4 9 33.7 2.6 28 2.6 19.4V6.1Z"
+              fill="url(#c)" stroke="#cdab63" stroke-width="1.3"/>
+        <path d="M17 5 27.6 8.3V19.2C27.6 25.6 22.7 30 17 32.2 11.3 30 6.4 25.6 6.4 19.2V8.3Z"
+              fill="none" stroke="#cdab63" stroke-width=".6" opacity=".55"/>
+        <text x="17" y="25" text-anchor="middle" font-family="Georgia,serif"
+              font-size="17" font-weight="700" fill="#fff">A</text>
+      </svg>
+      <div>
+        <div class="nome">Distribuição &amp; Detalhamento</div>
+        <div class="org">Advocacia-Geral do Estado de Minas Gerais · AGE/PA</div>
+      </div>
+    </div>
+    <h1>Política de Privacidade</h1>
+    <span class="selo">Extensão de uso interno · Sistema Tribunus</span>
+  </div>
+</header>
+
+<div class="declaracao">
+  <div class="caixa">
+    <p>Esta extensão não coleta, não armazena fora do seu computador, não transmite e não compartilha dados pessoais ou de processos.</p>
+    <small>Ela não possui servidor, não faz requisições de rede e não utiliza serviços de análise, publicidade ou rastreamento. Tudo o que ela faz acontece dentro do seu navegador.</small>
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <h2><span class="n">01</span> A que a extensão tem acesso</h2>
+    <p>Para cumprir sua função, a extensão lê e escreve campos das telas de processo e recurso do sistema Tribunus, exclusivamente na aba que você está usando:</p>
+    <ul>
+      <li><strong>Leitura</strong> — número do processo, número do SEI, comarca, vara, classe processual e órgão de origem, para exibir no painel e permitir que você confira antes de preencher.</li>
+      <li><strong>Escrita</strong> — os campos de assunto, órgão e detalhamento do assunto, quando você clica em “Preencher”.</li>
+    </ul>
+    <p>Esse acesso ocorre na memória do navegador, durante o uso da página. Esses dados <strong>não são gravados</strong> pela extensão, não saem do seu computador e não são acessíveis a nós nem a terceiros.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> O que fica salvo no seu navegador</h2>
+    <p>A extensão usa <code>chrome.storage.local</code>, um armazenamento local da sua máquina, para guardar apenas:</p>
+    <ul>
+      <li>o <strong>catálogo</strong> de assuntos, órgãos e modelos de detalhamento, incluindo as alterações que você fizer no editor;</li>
+      <li>as <strong>preferências do painel</strong> — posição na tela e se está recolhido.</li>
+    </ul>
+    <p>Esse conteúdo não é sincronizado entre dispositivos nem enviado a lugar algum. Ele permanece disponível somente para você, naquele navegador.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> O que a extensão não faz</h2>
+    <ul>
+      <li>Não envia dados pela rede — não há <code>fetch</code>, <code>XMLHttpRequest</code> nem qualquer chamada a servidores externos.</li>
+      <li>Não carrega código remoto — todo o JavaScript e CSS executado está dentro do pacote publicado.</li>
+      <li>Não usa cookies, identificadores, telemetria, análise de uso ou publicidade.</li>
+      <li>Não vende nem transfere dados a terceiros, sob nenhuma circunstância.</li>
+      <li>Não pratica atos processuais: nunca grava, assina, dá ciência, conclui ou cancela nada. A confirmação é sempre sua.</li>
+      <li>Não é executada em nenhum outro site além dos endereços listados abaixo.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> Permissões e por que existem</h2>
+    <table>
+      <thead>
+        <tr><th>Permissão</th><th>Finalidade</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>activeTab</td>
+          <td>Interagir com a aba do Tribunus em uso, para ler os campos do processo aberto e preencher assunto, órgão e detalhamento.</td>
+        </tr>
+        <tr>
+          <td>storage</td>
+          <td>Guardar localmente o catálogo editado e as preferências do painel.</td>
+        </tr>
+        <tr>
+          <td>tribunus.mg.gov.br</td>
+          <td>Executar a extensão apenas nas telas de processo e recurso, onde ficam os campos preenchidos. Restrito a <code>/gout/f/t/processo*</code> e <code>/gout/f/t/recurso*</code>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Como remover seus dados</h2>
+    <p>Como nada é armazenado fora da sua máquina, você controla tudo diretamente:</p>
+    <ul>
+      <li>Para apagar o catálogo e as preferências, desinstale a extensão — o Chrome remove o armazenamento local junto.</li>
+      <li>Para voltar ao catálogo original mantendo a extensão, use <strong>Catálogo → Backup → Restaurar catálogo padrão</strong>.</li>
+      <li>Para guardar uma cópia antes de apagar, use <strong>Catálogo → Backup → Exportar JSON</strong>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> Uso interno</h2>
+    <div class="nota">
+      Esta é uma ferramenta de trabalho interna da Procuradoria Administrativa e de Pessoal da Advocacia-Geral do Estado de Minas Gerais, destinada aos servidores da unidade no exercício de suas atribuições. O tratamento de dados dos processos permanece regido pelas normas aplicáveis ao próprio sistema Tribunus e à Administração Pública estadual; a extensão não altera, não amplia e não cria nenhum tratamento de dados além do que já ocorre no sistema.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span> Alterações nesta política</h2>
+    <p>Se a extensão passar a tratar dados de forma diferente, esta página será atualizada antes da publicação da nova versão, com a data de revisão abaixo. Alterações relevantes também constarão nas notas da versão na Chrome Web Store.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">08</span> Contato</h2>
+    <p>Dúvidas sobre esta política ou sobre o funcionamento da extensão podem ser encaminhadas para <a href="mailto:SEU-EMAIL@advocaciageral.mg.gov.br">SEU-EMAIL@advocaciageral.mg.gov.br</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="rodape">
+    <div>
+      <div class="sig">Advocacia-Geral do Estado de Minas Gerais</div>
+      <div style="margin-top:4px">Procuradoria Administrativa e de Pessoal</div>
+    </div>
+    <div style="text-align:right">
+      <div>Última atualização: 25 de agosto de 2026</div>
+      <div style="margin-top:4px">Extensão versão 2.1.0</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
